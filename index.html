@@ -17,15 +17,21 @@
 
   <!-- Header -->
 <header>
-
-  <h1>Danielle Russell</h1>
-
+<h1> Danielle Russell </h1>
+<!-- nav -->
+  <nav>
+    <ul id="menu">
+      <li><a href="#Home">Home</a></li>
+      <li><a href="#About">About</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+    </nav>
   </header>
 
 <!-- Introductory Section -->
 
-  <section class= "introduction">
-
+  <section id = "Home">
     <div class = "wrapper">
       <!-- Group 1: 2 Items-->
        <div class= "group">
@@ -44,14 +50,14 @@
   
 <!-- About Me section -->
 
-  <section class="about">
+  <section id="About">
     <div class = "wrapper">
 
        <!-- Group 2: 2 Items-->
 
     <div class="group">
       <div class="item-double">
-        <h2> About me </h2>
+        <h2> About Me </h2>
         <p> I enjoy working with other like-minded developers, and constantly learning and improving my skills. I have always been passionate about computer programming, as I love building things from scratch and seeing them come to life. I also love a good challenge and a chance to utilize my problem solving skills.</p>
         <p> When I am not developing, I am spending time with my family. We enjoy hiking and exploring the mountains, as well as frequenting the beach. Living in Southern California, we are lucky to have these sceneries at our doorstep!</p>
         <p> My services currently include:</p>
@@ -72,7 +78,7 @@
 
 <!-- Portfolio Section -->
 
-    <section class="portfolio">
+    <section id="Portfolio">
       <div class = "wrapper">
       <h2> Portfolio </h2>
 
@@ -106,26 +112,39 @@
 
 <!-- Contact Section -->
 
-<section class="contact">
+<section id="Contact">
   <div class="wrapper">
-    <h2> Contact Info </h2>
+    <h2> Contact Me </h2>
+    <hr>
      <!-- Group 4: 2 items-->
   <div class="group">
     <div class="item">
-      <p> *Insert Contact Form Here*</p>
-    </div>
+      <!-- Contact Form -->
 
-    <div class ="item">
-      <p> You can contact me at either of the following:</p>
-      <ol>
-      <li><a href="https://www.linkedin.com/in/danielle-russell-263725196/">LinkedIn</a></li>
-      <li> <a href=https://github.com/DanielleRussell-beep>GitHub</a></li>
-      </ol>
-      <p> You can also reach me at:</p>
-      <ul>
-  <li>Email: daniellerussell714@gmail.com</li>
-      <li> Phone: +1 714-462-0315</li>
-      </ul>
+    <form action="https://formspree.io/daniellerussell714@gmail.com" method="POST">
+          <label for="user-name">Name:</label>
+          <input id="user-name" type="text" name="name">
+
+          <label for="user-email">Email:</label>
+          <input id="user-email" type="text" name="email">
+
+          <label for="user-message">Message:</label>
+          <textarea id="user-message" name="message"></textarea>
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </form>
+    </div>
+    
+      <div class="item">
+        <p style= "font-weight: bold"> Contact Me: </p>
+      <p>
+  daniellerussell714@gmail.com</p>
+      <p>+1 714-462-0315</p>
+       <p style= "font-weight: bold"> Follow Me:</p>
+       <div class ="item-double">
+      <p><a href="https://www.linkedin.com/in/danielle-russell-263725196/"><img src =linked-in.png class= "linkedin"></a></p>
+      <p><a href=https://github.com/DanielleRussell-beep><img src = "github.jpg" class= "github"> </a></p>
+    </div>
   </div>
 </div>
   </div>

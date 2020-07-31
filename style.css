@@ -1,4 +1,37 @@
+/* Sections */
+
+#About {
+ padding: 20px 0 30px 0;
+  margin: 120px 0;
+  background-color: #e5e5e5;
+}
+
+#Contact p {
+  font-size: 16px;
+  font-family: helvetica;
+  text-align: left;
+}
+
+#Contact .item-double{
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  width: auto;
+  height: 50px;
+  padding-right: 50px;
+}
 /* Image Styles */
+
+.linkedin {
+  width: auto;
+  height: 100px;
+}
+
+.github {
+   width: auto;
+  height: 70px;
+}
+
 img {
   width: 100%;
 }
@@ -22,16 +55,6 @@ img.portfolio-image {
 }
 
 /* Heading Styles */
-h1 {
-  margin: 0;
-  padding: 20px 0;
-  font-family: Helvetica;
-  font-size: 20px;
-  font-weight: 100;
-  letter-spacing: 2px;
-  text-align: left;
-  text-transform: uppercase;
-}
 
 h2 {
   font-family: 'Times New Roman';
@@ -39,20 +62,14 @@ h2 {
      font-weight: 500px;
 }
 
-.introduction h2 {
+#Home h2 {
    font-family: Helvetica;
     font-size: 20px;
   font-weight: 100;
   letter-spacing: 2px;
   text-align: left;
+  padding-top: 50px;
 }
-
-/* Unordered Lists */
-
-li {
-  padding-bottom: 10px;
-}
-
 
 /* body */
 
@@ -61,12 +78,53 @@ body {
   background-color: white;
 }
 
+body p {
+  font-family: Georgia;
+  font-size: 15px;
+  line-height: 35px;
+  padding-top: 5px;
+}
+
+/* header and navigation */
+
 header {
-  text-align: center;
   font-family: Audrey;
   background-color: #F3EDE9;
   margin-bottom: 40px;
   display: block;
+}
+
+header h1 {
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding: left;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+   margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
 }
 
 .group {
@@ -74,12 +132,6 @@ header {
   flex-direction: row; 
 }
 
-section p {
-  font-family: Helvetica;
-  font-size: 15px;
-  line-height: 35px;
-  padding-top: 5px;
-}
 
 /* Groups & Items  (Mobile First) */
 
@@ -104,8 +156,7 @@ section p {
   margin: 10px;
 }
 
-/* Groups & Items  (Desktop) */
-
+/* Groups & Items  (Desktop)*/
 @media all and (min-width: 800px) {
 
   .wrapper {
@@ -116,15 +167,43 @@ section p {
 .group {
     flex-direction: row;
   }
-.introduction {
+
+.home {
   padding: 20px 0 30px 0;
   margin: 120px 0;
 }
-
-.about {
- padding: 20px 0 30px 0;
-  margin: 120px 0;
-  background-color: #e5e5e5;
-}
 }
 
+@media all and (min-width: 600px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 20px;
+    margin: 14px 0;
+    padding-top: 6px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+  }
+}
+
+  /* Contact Form */
+ 
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
