@@ -1,9 +1,17 @@
 /* Sections */
+#Home {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
 #About {
  padding: 20px 0 30px 0;
   margin: 120px 0;
-  background-color: #e5e5e5;
+ background-color: #e5e5e5;
+}
+
+#About li {
+  margin: 20px;
 }
 
 #Contact p {
@@ -20,38 +28,38 @@
   height: 50px;
   padding-right: 50px;
 }
+
+#Contact li {
+  list-style: none;
+}
 /* Image Styles */
-
-.linkedin {
-  width: auto;
-  height: 100px;
-}
-
-.github {
-   width: auto;
-  height: 70px;
-}
-
 img {
   width: 100%;
 }
 
 img.intro-image {
-height: auto;
-width: 70%;
-}
-
-img.about-image {
-  border-radius: 8px;
-  height: auto;
-  width: 500px;
-  padding-top: 150px;
-
+  border-radius: 10px;
 }
 
 img.portfolio-image {
-  border-radius: 10%;
   border: solid;
+  height: 100%:
+}
+
+img.about-image {
+padding-top: 150px;
+}
+
+.linkedin {
+  width: auto;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.github {
+   width: auto;
+  height: 70px;
+  padding-top: 20px;
 }
 
 /* Heading Styles */
@@ -67,15 +75,22 @@ h2 {
     font-size: 20px;
   font-weight: 100;
   letter-spacing: 2px;
-  text-align: left;
+  text-align: center;
   padding-top: 50px;
+}
+
+main h3 {
+  border-bottom: 1px dashed;
+}
+
+main h4 {
+  padding-left: 20px;
 }
 
 /* body */
 
 body {
   margin: 0;
-  background-color: white;
 }
 
 body p {
@@ -92,6 +107,7 @@ header {
   background-color: #F3EDE9;
   margin-bottom: 40px;
   display: block;
+  margin-bottom: 0px;
 }
 
 header h1 {
@@ -156,10 +172,14 @@ header nav ul li:last-child a {
   margin: 10px;
 }
 
+.item-triple {
+  flex: 3;
+  margin: 10px;
+}
 /* Groups & Items  (Desktop)*/
 @media all and (min-width: 800px) {
 
-  .wrapper {
+.wrapper {
     width: 80%;
     margin: auto;
   }
@@ -172,9 +192,6 @@ header nav ul li:last-child a {
   padding: 20px 0 30px 0;
   margin: 120px 0;
 }
-}
-
-@media all and (min-width: 600px) {
 
   header {
     display: flex;
@@ -196,7 +213,6 @@ header nav ul li:last-child a {
     color: #bdbdbd;
   }
 }
-
   /* Contact Form */
  
 form input, form textarea {
